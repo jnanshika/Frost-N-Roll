@@ -1,0 +1,86 @@
+{% extends 'base.html' %} {% load static %} {% block body %}
+
+<style>
+  .paddingTB60 {
+    padding: 60px 0px 60px 0px;
+  }
+
+  .gray-bg {
+    background: #f1f1f1 !important;
+  }
+
+  .about-title h1 {
+    color: hsl(152, 71%, 49%);
+    font-size: 60px;
+    font-weight: 600;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .about-title h4 {
+    color: rgba(118, 221, 195, 0.897);
+    font-size: 23px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-bottom: 24px;
+  }
+
+  .about-title p {
+    color: #df709e;
+    line-height: 1.8;
+    margin: 0 0 15px;
+    font-size: medium;
+  }
+
+  .about-paddingB {
+    padding-bottom: 12px;
+  }
+
+  .about-img {
+    padding-left: 57px;
+  }
+</style>
+
+<link
+  href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+  rel="stylesheet"
+/>
+<div class="about-section paddingTB60 gray-bg">
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="about-title clearfix">
+          <h1>OUR PLACE</h1>
+          <br />
+          <img
+            src="/static/aboutus.jpg"
+            alt="Icecream"
+            width="400"
+            height="300"
+            style="float: right"
+          />
+          <h4>We just love ice cream</h4>
+          <br />
+
+          <p class="about-paddingB">
+            We make fresh ice cream made to order customized for each and every
+            customer. Our operation is unique in that we make everything in
+            house, starting with the specially created ice cream bases that we
+            pride our selves on mastering, to adding any toppings the customer
+            might like to try or absolutely loves. All made instantly in front
+            of the customer as he watches his custom made ice cream freeze in
+            seconds.
+          </p>
+          <p class="about-paddingB">
+            We love and appreciate each and every customer and consider them and
+            our employees family! We are a family business, we thrive to keep
+            our focus on creating the best products possible from quality to
+            health benefits! all while maintaining a fun and hospitable
+            environment.
+          </p>
+
+          {% endblock body %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
